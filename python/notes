@@ -1,0 +1,105 @@
+
+empty = ""
+print(empty)  # Just prints an empty line
+
+multiple_lines = '''Triple quotes allows
+multi-line string.'''
+print(multiple_lines)   # Multiple lines
+
+        # The Length of a String
+            # The length of a string can be found using the len() built in function.
+random_string = "I am Batman"  # 11 characters
+print(len(random_string))   # Prints the length of the string.
+            # Each character is given a numerical index based on its position.
+            # It is indexed from 0 to n-1 where n is its length."
+        # Indexing
+        # Each character in a string can be accessed using its index
+batman = "Bruce Wayne"
+
+first = batman[0]  # Accessing the first character
+print(first)
+                # Will output B
+                # Can also reverse index using -
+batman = "Bruce Wayne"
+print(batman[-1])  # Corresponds to batman[10]
+print(batman[-5])  # Corresponds to batman[6]
+
+                # ASCII Versus Unicode#
+                # In Python 3.x, all strings are unicode.
+                # But, older versions of Python (Python 2.x) support only ASCII characters.
+            # To use unicode in Python 2.x, preceding the string with a u is must.
+            # For example:
+
+string = u"This is unicode"
+
+                # None Keyword
+                # None is used to define a null value or Null object in Python.
+                # It is not the same as an empty string, False, or a zero.
+                # It is a data type of the class NoneType object.
+
+
+
+# declaring a variable as None
+var = None
+
+# checking it's value
+if var is None:
+    print("var has a value of None")
+else:
+    print("var has a value")
+    # This outputs "var has a value of None"
+
+# String Slicing
+    # Slicing is the process of obtaining a portion (substring) of a string by using its indices.
+    # The template to slice string is sting[start:end]
+    # start being the index we want the substring to start.
+    # end is the index where we want our substring to end.
+    # The apces in the sting count towards the index.
+    # For Example:
+my_string = "This is MY string!"
+print(my_string[0:4]) # From the start till before the 4th index
+print(my_string[1:7])
+print(my_string[8:len(my_string)]) # From the 8th index till the end
+        # This will print:
+        # This
+        # his is
+        # MY string!
+# Inserting Strings Within a String.
+    # You can instert strings within a string.
+    # Integer within a string.
+    # And floats within a string.
+# For example:
+string1 = "I like %s" % "Python"
+print(string1) # 'I like Python'
+
+temp = "Educative"
+string2 = "I like %s" % temp
+print(string2)      # 'I like Educative'
+
+string3 = "I like %s and %s" % ("Python", temp)
+print(string3)      # 'I like Python and Educative'
+    # The %s is a format specifier, which tells python to insert the text there.
+    # We can also enter mltiple strings by putting multiple instances of %s inside out string.
+
+my_string = "%i + %i = %i" % (1,2,3)
+print(my_string) # '1 + 2 = 3'
+    # The %i is the format specifier, which tells Python to insert the integers here.
+
+string1 = "%f" % (1.11)
+print(string1)      # '1.110000'
+
+string2 = "%.2f" % (1.11)
+print(string2)      # '1.11'
+
+string3 = "%.2f" % (1.117)
+print(string3)      # '1.12'
+    # Specifiying %.2f limits the decimal places to 2
+    # If the float is greater than two decimal places %.2f will round off the number.
+
+# Comparisons
+    # *** The result of a comparison is always a bool. ***
+    # The == and != operators compare the values of both operands.
+    # However, the identity operators, is and is not, check whether the two operands are the exact same object.
+
+# Assignment Operators
+    #

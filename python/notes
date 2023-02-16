@@ -1,3 +1,72 @@
+#Notes on Python
+
+# Python Data Types:
+# Numbers
+# Strings
+# Booleans
+
+# Variables:
+    # Can start with upper or lowercase letters. However, they are case-sensitive.
+    # For example Income and income are two different variable.
+    # Numbers can be part of variables but variables cannot begin with numbers. income12 is valid but 12income is not.
+    # _ can appear anywhere in the variable.
+    # Spaces are not allowed.
+    # ** A good idea is to be descriptive with variables for example instead of inc or income something like weekly_income**
+
+# Integers:
+    # Comprised of all the positive and negative whole numbers.
+    # Different integer takes up different amounts of memory.
+# Example of Integer:
+print(10)  # A positive integer
+print(-3000)  # A negative integer
+
+num = 123456789  # Assigning an integer to a variable
+print(num)
+num = -16000  # Assigning a new integer
+print(num)  # Prints new value for num
+
+# Floating Point Numbers
+    # Floats refer t positive or negative decimal numbers.
+    # Occupies 24 bytes of memory.
+    # In Python 5 is considered an integer while 5.0 is considered a float.
+# Example of Float:
+print(1.00000000005)  # A positive float
+print(-85.6701)  # A negative float
+
+flt_pt = 1.23456789
+print(flt_pt)
+
+# Complex Numbers
+    # Just like the print() statement is used to print values, complex() is used to create complex numbers.
+    # It requires two values.
+    # Complex numbers are useful for modelling physics and electrical engineering.
+    # The first one will be the real part of the complex number, while the second value will be the imaginary part.
+    # complex(real, imaginary)
+    # Takes up 32 bytes of memory.
+print(complex(10, 20))  # Represents the complex number (10 + 20j)
+
+# Booleans
+    # Also knows as bool, allows us to choose between two values: True and False
+    # *** The first letter of a bool needs to be capitalized in python.***
+# Example
+print(True);
+
+f_bool = False
+print(f_bool);
+    # Output
+    # True
+    # False
+
+# Strings
+    # A string is a collection of characters closed within single, double or triple quotation marks.
+    # A string can contain a single character or be entirely empty.
+    # To add a multi-line string we can use triple quotes.
+
+print("Harry Potter!")  # Double quotation marks
+
+got = 'Game of Thrones...'  # Single quotation marks
+print(got)
+print("$")  # Single character
 
 empty = ""
 print(empty)  # Just prints an empty line

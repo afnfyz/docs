@@ -5,7 +5,7 @@
 # Strings
 # Booleans
 
-# Variables:
+# Variables: 
     # Can start with upper or lowercase letters. However, they are case-sensitive.
     # For example Income and income are two different variable.
     # Numbers can be part of variables but variables cannot begin with numbers. income12 is valid but 12income is not.

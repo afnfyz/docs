@@ -15,19 +15,17 @@
 
 7. Before attempting to SSH to GitHub, you need to add your private key to the SSH agent on your computer.
 
-8. Open your terminal and run the following command to start the SSH agent: <code> eval "$(ssh-agent -s)"
-</code>
+8. Open your terminal and run the following command to start the SSH agent: <code> eval "$(ssh-agent -s)" </code>
 
 9. Add your private key to the SSH agent by running the following command: <code> ssh-add ~/.ssh/demokey </code> replace "demokey" with the name of your PRIVATE key
 
 10. Verify that the key has been added to the SSH agent by running: <code> ssh-add -l </code>
 This command will list all the keys currenlty added to the SSH agent.
 
-11. Try and SSH to GitHub by entering: <code> ssh -T git@github.&#8204;com
-</code>
+11. Try and SSH to GitHub by entering: <code> ssh -T git@github.&#8204;com </code>
 
 12. You will be prompted to verify the authenticity of the host. Type yes and press enter.
 
 13. Success! You will now be able to connect to GitHub using SSH.
 
-{FINAL IMAGE}
+<img width="827" alt="Screenshot 2023-03-11 at 11 02 52 PM" src="https://user-images.githubusercontent.com/124072294/224523647-a9111949-78bf-4997-9ca3-1b2f289aa00e.png">

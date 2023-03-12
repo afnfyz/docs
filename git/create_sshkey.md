@@ -12,3 +12,15 @@
 5. The terminal will then generate the SSH key and display a message indicating that the key has been created.
 
 <img width="866" alt="Screenshot 2023-03-11 at 9 10 59 PM" src="https://user-images.githubusercontent.com/124072294/224520416-dbb5ae04-7919-4794-982b-7e0461351b28.png">
+
+7. Before attempting to use the SSH key, you need to add your private key to the SSH agent on your computer.
+
+8. Open your terminal and run the following command to start the SSH agent: <code> eval "$(ssh-agent -s)"
+</code>
+
+9. Add your private key to the SSH agent by running the following command: <code> ssh-add ~/.ssh/demokey </code> replace "demokey" with the name of your PRIVATE key
+
+10. Verify that the key has been added to the SSH agent by running: <code> ssh-add -l </code>
+This command will list all the keys currenlty added to the SSH agent.
+
+

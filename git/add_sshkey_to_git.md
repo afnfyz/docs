@@ -27,5 +27,4 @@ This command will list all the keys currenlty added to the SSH agent.
 12. You will be prompted to verify the authenticity of the host. Type yes and press enter.
 
 13. Success! You will now be able to connect to GitHub using SSH.
-
-<img width="827" alt="Screenshot 2023-03-11 at 11 02 52 PM" src="https://user-images.githubusercontent.com/124072294/224523647-a9111949-78bf-4997-9ca3-1b2f289aa00e.png">
+<img width="1082" alt="Screenshot 2023-03-11 at 10 54 41 PM" src="https://user-images.githubusercontent.com/124072294/224523789-b1866ef9-65bf-4e13-a191-df4234036829.png">

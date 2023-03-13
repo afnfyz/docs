@@ -1,4 +1,4 @@
-## <p align=center> Steps to assign SSH key to your GitHub account </p>
+### <p align=center> Steps to assign SSH key to your GitHub account </p>
 
 1. Open Terminal
 2. Locate and navigate to saved SSH key.

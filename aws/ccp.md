@@ -1,3 +1,5 @@
+# Notes for AWS CCP
+
 ##### 03/15/23
 
 Benefits of EC2 over on premise servers in datacenters:

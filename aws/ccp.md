@@ -142,4 +142,84 @@ deployment, scaling, and management of Kubernetes applications and
 provides a highly available and secure environment. EKS is based on the 
 open-source Kubernetes project and is fully compatible with Kubernetes 
 tooling and APIs.
+##### <p align="center"> 03/18/21 </p>
 
+### AWS High Availability and Fault Tolerance.
+#### AWS Regions
+-  AWS builds **regions** closest to where business traffic demands.
+- Locations sucs as Paris, Tokyo, Ohio
+- Each reagion has multiple data centers.
+- THey are connected with high speed fiber network.
+- Each reagion is isolated from other regions, data doesn't flow through them unless they are explicitly told to do so.
+- This is called regioal data soverignty.
+- Pricing varies depending on regions.
+
+#### AWS Availability Zones
+- One or more discrete data centers. 
+- Spread out in the region.
+
+<img width="1095" alt="image" 
+src="https://user-images.githubusercontent.com/124072294/226136387-e3b3e111-e05a-4aa5-b27b-aecd5dcfee0e.png">
+
+#### Edge Locations
+An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster 
+delivery.
+
+<img width="904" alt="image" 
+src="https://user-images.githubusercontent.com/124072294/226137936-cc80d551-7249-4620-84f4-ff01940bf647.png">
+
+
+**AWS Cloudfront**
+- CDN = Content Delivery Network
+- Used to cache date. Providing low latency to customers.
+- Uses edge locations
+
+**Amazon Route 53**
+- DNS = Domain Name Servie
+- Used to route customers to correct web locations with low latency
+
+**AWS Outposts**
+- AWS Outposts is a service that allows customers to run AWS infrastructure and services on-premises or in a co-location facility. 
+
+### API : Application programming interface
+- These Api's are invoked to interact with AWS services.
+
+This can be done with:
+- AWS Management Console
+- AWS Command Line Interface CLI
+- AWS Software Development Kits SDKs
+
+**AWS Elastic Beanstalk**
+
+Platform as a Service (PaaS)
+
+With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to 
+perform the following tasks:
+- Adjust capacity
+- Load balancing
+- Automatic scaling
+- Application health monitoring
+
+**AWS Cloud Formation**
+
+Infrastructure as Code (IaC)
+
+Allows you to define what you want in a cloud formation template in formats like JSON or YAML and AWS CloudFormation parses the 
+document and begins to provision all the resources that were defined.
+
+Manages all the calles to the backend APIS.
+
+
+**In summary** both Elastic Beanstalk and CloudFormation help you deploy and manage applications on AWS, but they have different 
+approaches and use cases. Elastic Beanstalk is focused on application deployment and management, while CloudFormation is focused on 
+infrastructure provisioning and management.
+
+### Amazon Virtual Private Cloud
+### Security Groups vs Network Access Control List
+<img width="1920" alt="image" 
+src="https://user-images.githubusercontent.com/124072294/226146097-a47f430c-b0b8-4d3c-859b-0d960c505e54.png">
+
+**Stateful** They are stateful, meaning that any inbound traffic that is allowed is automatically permitted to flow outbound, and vice 
+versa.
+**Stateless** meaning hey are stateless, meaning that they evaluate each incoming and outgoing packet independently based on the rules, 
+and they can be applied to multiple subnets within a VPC.

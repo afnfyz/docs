@@ -1,6 +1,6 @@
 # Notes for AWS CCP
 
-##### 03/15/23
+##### <p align="center"> 03/15/23 </p>
 
 Benefits of EC2 over on premise servers in datacenters:
 - No upfront cost.
@@ -142,6 +142,9 @@ deployment, scaling, and management of Kubernetes applications and
 provides a highly available and secure environment. EKS is based on the 
 open-source Kubernetes project and is fully compatible with Kubernetes 
 tooling and APIs.
+
+---
+
 ##### <p align="center"> 03/18/21 </p>
 
 ### AWS High Availability and Fault Tolerance.
@@ -158,26 +161,24 @@ tooling and APIs.
 - One or more discrete data centers. 
 - Spread out in the region.
 
-<img width="1095" alt="image" 
-src="https://user-images.githubusercontent.com/124072294/226136387-e3b3e111-e05a-4aa5-b27b-aecd5dcfee0e.png">
+<img width="1095" alt="image" src="https://user-images.githubusercontent.com/124072294/226136387-e3b3e111-e05a-4aa5-b27b-aecd5dcfee0e.png">
 
 #### Edge Locations
-An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster 
-delivery.
+An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery.
 
-<img width="904" alt="image" 
-src="https://user-images.githubusercontent.com/124072294/226137936-cc80d551-7249-4620-84f4-ff01940bf647.png">
+<img width="904" alt="image" src="https://user-images.githubusercontent.com/124072294/226137936-cc80d551-7249-4620-84f4-ff01940bf647.png">
 
 
 **AWS Cloudfront**
 - CDN = Content Delivery Network
 - Used to cache date. Providing low latency to customers.
-- Uses edge locations
+- Uses edge locations.
+
 
 **Amazon Route 53**
 - DNS = Domain Name Servie
 - Used to route customers to correct web locations with low latency
-
+- You can also buy domain names and manage them directly on AWS using Route 53.
 **AWS Outposts**
 - AWS Outposts is a service that allows customers to run AWS infrastructure and services on-premises or in a co-location facility. 
 
@@ -193,8 +194,7 @@ This can be done with:
 
 Platform as a Service (PaaS)
 
-With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to 
-perform the following tasks:
+With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
 - Adjust capacity
 - Load balancing
 - Automatic scaling
@@ -204,22 +204,77 @@ perform the following tasks:
 
 Infrastructure as Code (IaC)
 
-Allows you to define what you want in a cloud formation template in formats like JSON or YAML and AWS CloudFormation parses the 
-document and begins to provision all the resources that were defined.
+Allows you to define what you want in a cloud formation template in formats like JSON or YAML and AWS CloudFormation parses the document and begins to provision all the resources that were defined.
 
 Manages all the calles to the backend APIS.
 
 
-**In summary** both Elastic Beanstalk and CloudFormation help you deploy and manage applications on AWS, but they have different 
-approaches and use cases. Elastic Beanstalk is focused on application deployment and management, while CloudFormation is focused on 
-infrastructure provisioning and management.
+**In summary** both Elastic Beanstalk and CloudFormation help you deploy and manage applications on AWS, but they have different approaches and use cases. Elastic Beanstalk is focused on application deployment and management, while CloudFormation is focused on infrastructure provisioning and management.
 
 ### Amazon Virtual Private Cloud
 ### Security Groups vs Network Access Control List
-<img width="1920" alt="image" 
-src="https://user-images.githubusercontent.com/124072294/226146097-a47f430c-b0b8-4d3c-859b-0d960c505e54.png">
+<img width="1920" alt="image" src="https://user-images.githubusercontent.com/124072294/226146097-a47f430c-b0b8-4d3c-859b-0d960c505e54.png">
 
-**Stateful** They are stateful, meaning that any inbound traffic that is allowed is automatically permitted to flow outbound, and vice 
-versa.
-**Stateless** meaning hey are stateless, meaning that they evaluate each incoming and outgoing packet independently based on the rules, 
-and they can be applied to multiple subnets within a VPC.
+**Stateful** They are stateful, meaning that any inbound traffic that is allowed is automatically permitted to flow outbound, and vice versa.
+Denies all inbound traffic by default.
+**Stateless** meaning hey are stateless, meaning that they evaluate each incoming and outgoing packet independently based on the rules, and they can be applied to multiple subnets within a VPC.
+Allows all inbound and out bound traffic by default.
+
+
+**Amazon CloudFront**
+
+Amazon CloudFront is a content delivery network (CDN) service offered by Amazon Web Services (AWS) that delivers content, videos, applications, and APIs to end-users with low latency and high transfer speeds.
+
+CloudFront uses a global network of edge locations that cache content closer to the end-users, reducing the time it takes to load web pages and other content. When a user requests a file from a CloudFront distribution, the request is automatically routed to the nearest edge location, which then serves the file directly from the cache if it's available.
+
+A CloudFront distribution is a collection of edge locations that cache copies of your content to improve delivery speed and reduce latency for end-users. When you create a CloudFront distribution, you specify the origin for the content that you want to deliver, which can be an S3 bucket, an EC2 instance, or a load balancer, among other options.
+
+### Database and Storage.
+**Amazon Elastic Block Storage EBS**
+<img width="1012" alt="image" src="https://user-images.githubusercontent.com/124072294/226147133-cc915c83-9d34-47f3-bfeb-39af8cd39c5a.png">
+
+<img width="1093" alt="image" src="https://user-images.githubusercontent.com/124072294/226147148-ea07eae6-54c7-401d-8ea8-6ebd45f1c98f.png">
+
+**Amazon Elastic Block Store (EBS)** is a block storage service that provides highly available and reliable storage volumes for use with Amazon EC2 instances. Amazon EBS Snapshots are point-in-time copies of an EBS volume, which can be used for backup, disaster recovery, or to migrate data between Amazon Web Services (AWS) regions.
+
+Needs to be in the same availabilty zone as the EC2 instances to attach to them.
+Volume does not automatically scale.
+
+An **Amazon EBS snapshot** contains all the data on the volume since the last snapshot, and not just the changes. Snapshots are incremental, meaning that only the data that has changed since the last snapshot is saved. This can help save storage space and reduce costs.
+
+**Amazon Elastic File System EFS**
+
+- EFS can be used to create and manage file systems that can be accessed by multiple instances simultaneously.
+-  EFS supports the NFS protocol and can be accessed by instances in multiple Availability Zones within the same region. Is a regional resource.
+- Linux file system.
+- Automatically scales as you write to it. 
+### AWS S3 Bucket
+
+<img width="626" alt="image" src="https://user-images.githubusercontent.com/124072294/226150756-a64ab481-f90b-43b2-b35f-4917b3bd94ba.png">
+
+<img width="1917" alt="image" src="https://user-images.githubusercontent.com/124072294/226152852-79d60b93-5e05-48ba-82da-ca06f583af2b.png">
+
+<img width="1918" alt="image" src="https://user-images.githubusercontent.com/124072294/226152869-95b1da9e-2b09-4665-b7fc-874a427e8c51.png">
+
+
+**Amazon S3 Standard**
+Comes with 11 9's of durability.
+Data stored in atleast 3 facilities.
+
+**Amazon S3 Static website hosting**
+
+**Amazon S3 Standard - Infrequent Access (S3 Standard IA)**
+
+Good for data that requires long term storage but also quick access when needed.
+
+**Amazon S3 Intelligent-Tiering**
+
+Ideal for data with unknown or changing access patterns
+Requires a small monthly monitoring and automation fee per object
+In the Amazon S3 Intelligent-Tiering storage class, Amazon S3 monitors objects’ access patterns. If you haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, Amazon S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, Amazon S3 Standard.
+
+**Amazon S3 Glacier**
+Used to archive data
+
+**Amazon S3 Lifecycle policy** 
+Can move files in between different tiers automatically depending on your configurations.

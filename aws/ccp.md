@@ -1,5 +1,6 @@
 # Notes for AWS CCP
 
+## Afnan's Notes:
 ##### <p align="center"> 03/15/23 </p>
 
 Benefits of EC2 over on premise servers in datacenters:
@@ -7,8 +8,7 @@ Benefits of EC2 over on premise servers in datacenters:
 - Doesn't take time to set up and secure datacenters.
 - Not locked in or stuck with servers you don't need.
 - YOU ONLY PAY FOR WHAT YOU USE.
-- Instances are vertically scaleable, can be given more memory and cpu 
-when needed.
+- Instances are vertically scaleable, can be given more memory and cpu when needed.
 
 Multitenancy:
 Having independant tenants, or instances which are 
@@ -17,7 +17,7 @@ the same hardware. A good example of this would be
 an apartment building, the tenants are separated 
 from each other but still part of one building.
 
-##### 03/16/23
+##### <p align="center"> 03/16/23 </p>
 
 With EC2 instances you can either scale UP or scale OUT. 
 Scaling up is adding more power to the instances.
@@ -27,123 +27,59 @@ While scaling out is to increase the amount of instances.
 
 ** Scales horizontally.
 
-<img width="1031" alt="image" 
-src="https://user-images.githubusercontent.com/124072294/225665102-00742a04-b2d1-431a-a921-27c8348c8c44.png">
+<img width="1031" alt="image" src="https://user-images.githubusercontent.com/124072294/225665102-00742a04-b2d1-431a-a921-27c8348c8c44.png">
 
 You can also set desired and maximum capacity;
-For example, you might configure the Auto Scaling group to scale out in 
-response to increased demand, but only to a maximum of four Amazon EC2 
-instances.
+For example, you might configure the Auto Scaling group to scale out in response to increased demand, but only to a maximum of four Amazon EC2 instances.
 Again, you pay for only the instances you use, when you use them. 
 
 ### Elastic Load Balancing:
 
-Runs on a regional level, automatically and optimally filters traffic to 
-multiple recources such as EC2 instances.
+Runs on a regional level, automatically and optimally filters traffic to multiple recources such as EC2 instances.
 
-It is a single point of contact for all incoming traffic to the previously 
-shown auto scaling group. Elastic Load Balancing and Amazon EC2 Auto 
-Scaling are separate services, but they work together to help ensure that 
-applications running in Amazon EC2 can provide high performance and 
-availability. 
+It is a single point of contact for all incoming traffic to the previously shown auto scaling group. Elastic Load Balancing and Amazon EC2 Auto Scaling are separate services, but they work together to help ensure that applications running in Amazon EC2 can provide high performance and availability. 
 
-<img width="1460" alt="image" 
-src="https://user-images.githubusercontent.com/124072294/225673626-5893cad0-7c3b-4457-bc21-aedc47f1f726.png">
+<img width="1460" alt="image" src="https://user-images.githubusercontent.com/124072294/225673626-5893cad0-7c3b-4457-bc21-aedc47f1f726.png">
 
 Example of decoupled architecture:
-<img width="1304" alt="image" 
-src="https://user-images.githubusercontent.com/124072294/225679023-8242aa14-2e58-45c6-97d0-59598c0f1492.png">
+<img width="1304" alt="image" src="https://user-images.githubusercontent.com/124072294/225679023-8242aa14-2e58-45c6-97d0-59598c0f1492.png">
 
 ### Tightly Coupled Architecture vs Loosely Coupled Architecture
 
-A tightly coupled architecture is where applications communicate with each 
-other directly. This can have a negative impact in which if one 
-application has an error and cannot recieve messages the other application 
-will also begin to see errors. (This can be considered as a monolithic 
-application.)
+A tightly coupled architecture is where applications communicate with each other directly. This can have a negative impact in which if one application has an error and cannot recieve messages the other application will also begin to see errors. (This can be considered as a monolithic application.)
 
-A loosely coupled architecture has buffers between applications where they 
-are isolated.
-If one component fails it won't cause a cascading effect. (While this can 
-be considered as a nicroservices approach.)
+A loosely coupled architecture has buffers between applications where they are isolated.
+If one component fails it won't cause a cascading effect. (While this can be considered as a nicroservices approach.)
 
 ### Serverless Computing
 
-AWS Serverless cloud computing model allows developers to build and run 
-applications and services without worrying about server management. In a 
-serverless architecture, the cloud provider, aws in this case, manages the 
-infrastructure, scaling, and availability of the servers, and the 
-developer only needs to focus on writing code.
+AWS Serverless cloud computing model allows developers to build and run applications and services without worrying about server management. In a serverless architecture, the cloud provider, aws in this case, manages the infrastructure, scaling, and availability of the servers, and the developer only needs to focus on writing code.
 
-AWS Serverless provides a range of services and tools that allow 
-developers to create serverless applications, including AWS Lambda, Amazon 
-API Gateway etc.
+AWS Serverless provides a range of services and tools that allow developers to create serverless applications, including AWS Lambda, Amazon API Gateway etc.
 
-With AWS Serverless, developers can create scalable and highly available 
-applications that can handle millions of requests per second without 
-worrying about server provisioning, scaling, and availability. 
+With AWS Serverless, developers can create scalable and highly available applications that can handle millions of requests per second without worrying about server provisioning, scaling, and availability. 
 
 #### AWS Lambda vs Container Services such as ECS and EKS
 
-AWS Lambda and container services are both serverless computing platforms 
-provided by AWS, but they differ in how they manage and run code.
+AWS Lambda and container services are both serverless computing platforms provided by AWS, but they differ in how they manage and run code.
 
 **AWS Lambda:** 
-A serverless compute service that allows developers to run code without 
-worrying about infrastructure management. It allows developers to write 
-code in various programming languages, such as Node.js, Python, Java, Go, 
-and more, and execute it in response to events, such as API requests, file 
-uploads, and database changes. AWS Lambda automatically scales the compute 
-resources to match the incoming request volume and charges only for the 
-compute time used.
+A serverless compute service that allows developers to run code without worrying about infrastructure management. It allows developers to write code in various programming languages, such as Node.js, Python, Java, Go, and more, and execute it in response to events, such as API requests, file uploads, and database changes. AWS Lambda automatically scales the compute resources to match the incoming request volume and charges only for the compute time used.
 
 **AWS Container services suchs as ECS and EKS:**
-Container services, on the other hand, are a way to run applications in 
-containers that are packaged with all their dependencies and libraries. 
-AWS provides container services such as Amazon Elastic Container Service 
-(ECS) and Amazon Elastic Kubernetes Service (EKS) that allow developers to 
-manage and run containers on a fully managed infrastructure. Container 
-services provide more control over the environment in which the 
-application runs, making it easier to manage dependencies and 
-configurations.
+Container services, on the other hand, are a way to run applications in containers that are packaged with all their dependencies and libraries. AWS provides container services such as Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS) that allow developers to manage and run containers on a fully managed infrastructure. Container services provide more control over the environment in which the application runs, making it easier to manage dependencies and configurations.
 
-In summary, if you need to run small, independent units of code in 
-response to events, then Lambda is the way to go. If you need to run 
-full-fledged applications that require more control over the environment 
-in which they run, then container services are a better choice.
+In summary, if you need to run small, independent units of code in response to events, then Lambda is the way to go. If you need to run full-fledged applications that require more control over the environment in which they run, then container services are a better choice.
 
-**AWS Fargate** is a serverless compute engine for containers that allows 
-you to run Docker containers in the cloud without managing underlying 
-infrastructure. Fargate is designed to simplify the deployment and 
-management of containerized applications, allowing you to focus on 
-building and running your applications rather than managing 
-infrastructure. With Fargate, you don't need to provision or manage 
-servers, which means you can avoid the overhead of capacity planning, 
-patching, and maintenance.
+**AWS Fargate** is a serverless compute engine for containers that allows you to run Docker containers in the cloud without managing underlying infrastructure. Fargate is designed to simplify the deployment and management of containerized applications, allowing you to focus on building and running your applications rather than managing infrastructure. With Fargate, you don't need to provision or manage servers, which means you can avoid the overhead of capacity planning, patching, and maintenance.
 
 >#### Differences between AWS Fargate, ECS and EKS:
 >
->> **AWS Fargate** Fargate manages the infrastructure required to run your 
-containers, such as virtual machines, and automatically scales the 
-infrastructure based on your application's needs. With Fargate, you only 
-pay for the compute resources consumed by your application.
+>> **AWS Fargate** Fargate manages the infrastructure required to run your containers, such as virtual machines, and automatically scales the infrastructure based on your application's needs. With Fargate, you only pay for the compute resources consumed by your application.
 >
->> **Amazon Elastic Container Service (ECS)** is a container management 
-service that allows you to run Docker containers on a managed cluster of 
-EC2 instances. You are responsible for managing the EC2 instances, but ECS 
-automates the management of the container orchestration, load balancing, 
-and scaling. You can run ECS on either a cluster of EC2 instances or on 
-Fargate.
+>> **Amazon Elastic Container Service (ECS)** is a container management service that allows you to run Docker containers on a managed cluster of EC2 instances. You are responsible for managing the EC2 instances, but ECS automates the management of the container orchestration, load balancing, and scaling. You can run ECS on either a cluster of EC2 instances or on Fargate.
 >
->> **Amazon Elastic Kubernetes Service (EKS)** is a fully managed 
-Kubernetes service that allows you to run Kubernetes clusters on AWS 
-without having to manage the underlying infrastructure. EKS simplifies the 
-deployment, scaling, and management of Kubernetes applications and 
-provides a highly available and secure environment. EKS is based on the 
-open-source Kubernetes project and is fully compatible with Kubernetes 
-tooling and APIs.
-
----
+>> **Amazon Elastic Kubernetes Service (EKS)** is a fully managed Kubernetes service that allows you to run Kubernetes clusters on AWS without having to manage the underlying infrastructure. EKS simplifies the deployment, scaling, and management of Kubernetes applications and provides a highly available and secure environment. EKS is based on the open-source Kubernetes project and is fully compatible with Kubernetes tooling and APIs.
 
 ##### <p align="center"> 03/18/21 </p>
 
@@ -278,3 +214,126 @@ Used to archive data
 
 **Amazon S3 Lifecycle policy** 
 Can move files in between different tiers automatically depending on your configurations.
+
+##### <p align="center"> 03/19/23 </p>
+
+### Amazon Relational Database Service
+
+**(Amazon RDS)**: 
+
+<img width="1918" alt="image" src="https://user-images.githubusercontent.com/124072294/226208874-242c8b38-da68-4d47-af01-8823a5038016.png">
+
+- Automated Patching
+- Backups
+- Redundancy
+- Failover
+- Disaster recovery
+
+Data Stoerd such that it relates to other pieces of data.
+Lift and shift migration 
+have access to save variable as on premise.
+
+**Amazon Aurora**
+- 1/10th the price of commercial databases
+- Data is replicated, you have 6 copies at any given time
+- Up to 15 read replicas
+- Continuous backup to Amazon S3
+- Can scale up to 128 TB of storage
+
+Consider Amazon Aurora if your workloads require high availability. It replicates six copies of your data across three Availability Zones and continuously backs up your data to Amazon S3.
+
+**Amazon Dynamo DM**
+- Serverless
+- Non Relational Database / NoSQL Database
+
+<img width="1920" alt="image" src="https://user-images.githubusercontent.com/124072294/226208905-f887d421-114f-4664-b7e8-b868e6bee7b9.png">
+
+**Amazon Redshift**
+- Data warehouse
+
+### Data Migration
+
+**Amazon Data Migtation Service DMS**
+
+Migrate data securely.
+Source database remains fully operational.
+
+
+### AWS shared responsibility model
+
+<img width="1918" alt="image" src="https://user-images.githubusercontent.com/124072294/226210730-fc53a4d0-85b7-4d40-89bc-8aafa048656b.png">
+
+<img width="1916" alt="image" src="https://user-images.githubusercontent.com/124072294/226214960-d8c72a58-b737-4677-809c-e2eb7531ee8e.png">
+
+<img width="905" alt="image" src="https://user-images.githubusercontent.com/124072294/226215025-0d9b7f26-4d00-423c-b158-9c2d06aa1837.png">
+
+
+### IAM
+
+Example of a IAM Policy:
+<img width="1245" alt="image" src="https://user-images.githubusercontent.com/124072294/226215244-a22807d1-70f9-4a77-854c-8f6adce4d6b4.png">
+- Effect is always either Allow or Deny
+- Action can be any API call
+- Resource is which specific AWS resource that API call is for
+
+##### <p align="center"> 03/20/23 </p>
+
+**AWS Key Management Service AWS KMS**
+
+- enables you to perform encryption operations through the use of cryptographic keys.
+
+**AWS Artifact**
+
+**AWS Sheild**
+
+**Amazon Inspector**
+Amazon Inspector helps to improve the security and compliance of applications by running automated security assessments. It checks applications for security vulnerabilities and deviations from security best practices, such as open access to Amazon EC2 instances and installations of vulnerable software versions. 
+
+After Amazon Inspector has performed an assessment, it provides you with a list of security findings. The list prioritizes by severity level, including a detailed description of each security issue and a recommendation for how to fix it. However, AWS does not guarantee that following the provided recommendations resolves every potential security issue. Under the shared responsibility model, customers are responsible for the security of their applications, processes, and tools that run on AWS services.
+
+**Amazon GuardDuty**
+
+<img width="994" alt="image" src="https://user-images.githubusercontent.com/124072294/226431921-7f4fa312-ce9a-443d-b8ea-89067530f95d.png">
+
+After you have enabled GuardDuty for your AWS account, GuardDuty begins monitoring your network and account activity. You do not have to deploy or manage any additional security software. GuardDuty then continuously analyzes data from multiple AWS sources, including VPC Flow Logs and DNS logs. 
+
+If GuardDuty detects any threats, you can review detailed findings about them from the AWS Management Console. Findings include recommended steps for remediation. You can also configure AWS Lambda functions to take remediation steps automatically in response to GuardDuty’s security findings.
+
+### Monitoring
+
+Observing systems, collecting metrics, evaluating data to make decisons or take actions is called monitoring.
+
+**Amazon CloudWatch**
+
+Amazon CloudWatch is a web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics.
+
+CloudWatch uses metrics to represent the data points for your resources. AWS services send metrics to CloudWatch. CloudWatch then uses these metrics to create graphs automatically that show how performance has changed over time. 
+
+>CloudWatch alarms
+>
+>With CloudWatch, you can create alarms that automatically perform actions if the value of your metric has gone above or below a predefined threshold. 
+>
+>For example, suppose that your company’s developers use Amazon EC2 instances for application development or testing purposes. If the developers occasionally forget to stop the instances, the instances will continue to run and incur charges. 
+>
+>In this scenario, you could create a CloudWatch alarm that automatically stops an Amazon EC2 instance when the CPU utilization percentage has remained below a certain threshold for a specified period. When configuring the alarm, you can specify to receive a notification whenever this alarm is triggered.
+
+
+**AWS CloudTrail**
+
+The comprehensive API auditing tool. The engine is simple, every request made to AWS, it doesn't matter if it's to launch an EC2 instance, or add a row to a DynamoDB table, or change a user's permissions. Every request gets logged in the CloudTrail engine. The engine records exactly who made the request, which operator, when did they send the API call? Where were they? What was their IP address? And what was the response? Did something change? And what is the new state? Was the request denied? 
+
+
+**AWS Trusted Advison**
+
+AWS Trusted Advisor is a web service that inspects your AWS environment and provides real-time recommendations in accordance with AWS best practices.
+
+Trusted Advisor compares its findings to AWS best practices in five categories: 
+
+1 cost optimization 
+2 performance
+3 security
+4 fault tolerance
+5 service limits 
+
+For the checks in each category, Trusted Advisor offers a list of recommended actions and additional resources to learn more about AWS best practices. 
+

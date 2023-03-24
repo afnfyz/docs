@@ -35,8 +35,6 @@ These are just a few of the basic concepts and principles of security.
 
 ### The Security Life Cycle consists of: 
 
-
-
 **Prevention**
 
 Prevention is the first and arguably the most important phase of the security lifecycle. It offers the opportunity to proactively stop threats from becoming breaches through the implementation of security controls.
@@ -57,7 +55,5 @@ Response
 
 
 Analysis
-
-
 
 <img width="1173" alt="image" src="https://user-images.githubusercontent.com/124072294/227323187-c60fd72f-af3b-4a27-a4fd-df0f3d826647.png">

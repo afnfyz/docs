@@ -88,3 +88,16 @@ By restricting the use of or disabling network discovery protocols, you can prev
 
 **In the AWS Cloud**
 Amazon Inspector scans Amazon Elastic Compute Cloud (Amazon EC2) instances for open network paths and other network reachability issues and provides guidance about restricting access that is not secure
+
+
+<img width="1187" alt="Screenshot 2023-03-25 at 4 58 55 PM" src="https://user-images.githubusercontent.com/124072294/227741529-0c156923-ab31-4c0e-8661-c39fa1f64c6a.png">
+
+**AWS Network Firewall** is a service that facilitates the deployment of essential network protections to virtual private clouds (VPCs) on AWS. Its IPS provides active traffic flow inspection with real-time network and application layer protections against vulnerability exploits and brute force attacks. Network Firewall uses a signature-based detection engine that matches network traffic patterns to known threat signatures. Its criteria for matching include packet anomalies and packet attributes such as byte sequences.
+
+
+<img width="1186" alt="image" src="https://user-images.githubusercontent.com/124072294/227741709-34b0c6c5-fb9b-4d0e-bb0b-e1a222ffd923.png">
+
+
+
+Network segmentation, also called **subnetting**, is another technique for enhancing the security of a network. Subnetting is the process of taking a large network and dividing it into smaller networks. Each smaller network is called a subnet and is assigned a contiguous subset of the IP address range of the large network. Each subnet can then be secured to meet the specific needs of the resources that it will host. For example, in an organization with multiple office locations, each location might provide a different service and have different security requirements. Therefore, the organization might want to create individual subnets for each location so that they can apply different levels of security to the different subnets.
+

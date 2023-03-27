@@ -58,6 +58,13 @@ Analysis
 
 <img width="1173" alt="image" src="https://user-images.githubusercontent.com/124072294/227323187-c60fd72f-af3b-4a27-a4fd-df0f3d826647.png">
 
+Prevention includes:
+Network Hardening
+System Hardening
+Data Security
+Public Key Ingrastructure (PKI)
+Identity Management
+
 ### **A comprehensive security strategy for an AWS infrastructure typically includes the following components:**
 
 
@@ -101,3 +108,52 @@ Amazon Inspector scans Amazon Elastic Compute Cloud (Amazon EC2) instances for o
 
 Network segmentation, also called **subnetting**, is another technique for enhancing the security of a network. Subnetting is the process of taking a large network and dividing it into smaller networks. Each smaller network is called a subnet and is assigned a contiguous subset of the IP address range of the large network. Each subnet can then be secured to meet the specific needs of the resources that it will host. For example, in an organization with multiple office locations, each location might provide a different service and have different security requirements. Therefore, the organization might want to create individual subnets for each location so that they can apply different levels of security to the different subnets.
 
+### Network Hardening
+
+Network hardening typically involves implementing security measures such as:
+
+**Configuring firewalls and intrusion detection/prevention systems** to block unauthorized access attempts and malicious traffic.
+
+**Regularly patching and updating network devices and applications** to fix security vulnerabilities.
+
+**Enforcing strong password policies and multi-factor authentication** to prevent unauthorized access to devices and accounts.
+
+**Implementing network segmentation** to isolate critical assets and limit the spread of malware or attacks.
+
+**Limiting unnecessary services and protocols** to minimize the attack surface and reduce the risk of exploitation.
+
+**Configuring logging and monitoring tools** to detect and respond to security incidents.
+
+
+
+### System Hardening
+
+Systems hardening is the action of securing computing systems to protect them from attacks.
+
+A comprehensive solution for systems hardening should also consider these three security facets:
+
+ - Authentication: Validates that you are who you say you are - 
+ 
+ - Authorization: Verifies that you have permission to access the requested resource 
+ 
+ - Accounting: Gathers usage and other information that is used for auditing and, optionally, billing
+
+ 
+ Physical security is also part of System Hardening 
+
+**Common ways to harden systems:**
+
+ • Turn off unnecessary services. 
+
+ • Control computer operations through group policies.
+ 
+ • Regularly apply patches and updates. 
+
+ <img width="1173" alt="image" src="https://user-images.githubusercontent.com/124072294/227803907-a9dab2bd-362f-4296-ac5d-61622acf9e0a.png">
+
+
+### System Hardening in the cloud
+
+
+**Automated response (investigatory workflow) in AWS**
+ <img width="1059" alt="image" src="https://user-images.githubusercontent.com/124072294/227804670-44157f57-cabe-4931-b148-d50aafb587f0.png">

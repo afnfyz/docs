@@ -167,3 +167,15 @@ A comprehensive solution for systems hardening should also consider these three 
 
  **Symmetric encryption** uses the same key to encrypt and decrypt the data. The key is a shared secret between the sender and the receiver. Symmetric encryption is fast and reliable and is used for bulk data.
 
+
+**Asymmetric encryption** uses both a private key and a public key (a key pair) to encrypt and decrypt the data. Every user in the conversation has a key pair. Asymmetric encryption is more complex and much slower than symmetric encryption. However, it provides more capabilities in the way that keys are managed.
+Asymmetric encryption is used to encrypt emails or create digital signatures.
+
+<img width="1043" alt="image" src="https://user-images.githubusercontent.com/124072294/228040211-c9ba7408-3054-4b26-9a79-c0e7a8077678.png">
+
+In the diagram, you can see that the message “Hello” is encrypted with a public key. After it’s encrypted, the only way to read the message is to use the private key associated to this public key to decrypt the message.
+
+#### Public Key Cryptography Videos: How keys are exchanged over a public network.
+[Deffie Hellman Explained](https://www.youtube.com/watch?v=YEBfamv-_do)
+
+[Deffie Hellman Explaned Computerphile](https://www.youtube.com/watch?v=NmM9HA2MQGI)

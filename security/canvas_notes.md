@@ -67,7 +67,6 @@ Identity Management
 
 ### **A comprehensive security strategy for an AWS infrastructure typically includes the following components:**
 
-
 **Identity and Access Management (IAM):** Implementing IAM controls is crucial to prevent unauthorized access to AWS resources. This includes defining access policies and roles for users, groups, and services, enforcing MFA (multi-factor authentication), and regularly reviewing and auditing access privileges.
 
 **Network Security:** Securing the network is important to prevent attacks such as DDoS and network intrusion. This includes setting up network firewalls, configuring VPCs, and implementing security groups and NACLs (network access control lists).
@@ -157,3 +156,14 @@ A comprehensive solution for systems hardening should also consider these three 
 
 **Automated response (investigatory workflow) in AWS**
  <img width="1059" alt="image" src="https://user-images.githubusercontent.com/124072294/227804670-44157f57-cabe-4931-b148-d50aafb587f0.png">
+
+
+ ### Data Security
+
+ **Encryption**
+
+
+ <img width="922" alt="image" src="https://user-images.githubusercontent.com/124072294/228038932-13fc40a9-9d4b-4302-ad55-ca66a4c05a59.png">
+
+ **Symmetric encryption** uses the same key to encrypt and decrypt the data. The key is a shared secret between the sender and the receiver. Symmetric encryption is fast and reliable and is used for bulk data.
+

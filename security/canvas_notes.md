@@ -179,3 +179,46 @@ In the diagram, you can see that the message “Hello” is encrypted with a pub
 [Deffie Hellman Explained](https://www.youtube.com/watch?v=YEBfamv-_do)
 
 [Deffie Hellman Explaned Computerphile](https://www.youtube.com/watch?v=NmM9HA2MQGI)
+
+### Prevention: Identity Management
+
+<img width="1409" alt="image" src="https://user-images.githubusercontent.com/124072294/228299075-aaf89bb0-7417-4942-a4c4-602daaa30ce5.png">
+
+As an example, consider the case of a visitor who tries to gain physical access to a company’s facilities:
+
+• Identification: The visitor must first prove that they are who they say they are by showing a picture identification to the receptionist.
+
+• Authentication: The receptionist authenticates the visitor’s identity by comparing the picture to the person who is standing in front of them.
+
+• Authorization: To specify that the person is expected and should be allowed into the facilities, the receptionist calls the contact person to grant access to the visitor. 
+
+The receptionist might also do the following actions: 
+
+• Issue a visitor’s badge • Require that the company contact escort the visitor into the facilities as proof to other employees of the visitor’s authorization.
+
+• Accounting: The visitor is required to sign a visitors’ log. 
+
+The visitor provides the following information in the log: 
+
+• Name 
+
+• Date and time they arrived and departed 
+
+• Number of their visitor’s badge 
+
+• Name of their contact.
+
+**The three types of authentication factors are:**
+<img width="1031" alt="image" src="https://user-images.githubusercontent.com/124072294/228305903-2d6cc9d4-d55f-4fa5-8419-0af979b52292.png">
+
+Using something that you have is a more secure way to authenticate. This method is often implemented as a second-factor authentication system after you have provided something that you know
+
+<img width="406" alt="image" src="https://user-images.githubusercontent.com/124072294/228306322-590e4daa-edc6-450f-b465-b943a0796fd8.png">
+
+Using an authentication mechanism that validates a unique human property, such as a fingerprint or a retinal pattern, is the most complex and expensive solution. However, the authentication can be highly reliable when it is configured well.
+
+<img width="485" alt="Screenshot 2023-03-28 at 12 31 27 PM" src="https://user-images.githubusercontent.com/124072294/228307634-d36124fc-2798-4af6-b3d5-985d7d8efe43.png">
+
+**Dictionary Attacks**
+
+A list of predefined words as passwords is used to attempt to log in to a system.

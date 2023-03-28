@@ -273,3 +273,12 @@ IAM is used to configure authorization based on the user. Authorization determin
 <img width="524" alt="image" src="https://user-images.githubusercontent.com/124072294/228338508-df73195f-9811-4e25-8915-0345b26f9874.png">
 
 A role is a tool for giving temporary access to AWS resources in your AWS account. Permissions are not attached to an IAM user or group. Instead, at runtime, applications or AWS services can programmatically assume a role. When a role is assumed, AWS returns temporary security credentials that the user or application can use to make programmatic requests to AWS. Consequently, you do not need to share long-term security credentials
+
+**Policies**
+
+A request results in an explicit deny if an applicable policy includes a Deny statement. If policies that apply to a request include an Allow statement and a Deny statement, the Deny statement trumps the Allow statement. The request is explicitly denied.
+
+<img width="516" alt="image" src="https://user-images.githubusercontent.com/124072294/228367311-d2496ee7-e24d-47dc-bf54-365897f0433d.png">
+
+You can assign the same policy to a user, group, and role. 
+This practice makes reuse available and reduces the need to recreate the same policy for different identities.

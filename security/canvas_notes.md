@@ -222,3 +222,54 @@ Using an authentication mechanism that validates a unique human property, such a
 **Dictionary Attacks**
 
 A list of predefined words as passwords is used to attempt to log in to a system.
+
+[Password Storage: Hashing, Salting etc.](https://www.youtube.com/watch?v=qgpsIBLvrGY)
+
+**Single Sign-On SSO**
+
+With single sign-on (SSO), users log in once and gain access to different applications without the need to re-enter login credentials for each application.
+
+> Federated users is a type of SSO implementation that is used between web identities. It uses a token to verify user identity between distinct systems.
+With SSO, individuals can sign into different networks or services by using the same group or personal credentials. For example, by using SSO, you can use your Google account credentials to sign into Facebook for example.
+
+With **AWS IAM Identity Center (successor to AWS Single Sign-On)**, you can manage sign-in security for your workforce identities, also known as workforce users. IAM Identity Center provides one place where you can create or connect workforce users and centrally manage their access across all their AWS accounts and applications.
+
+### Amazon IAM
+
+IAM is used to configure authorization based on the user. Authorization determines which resources users can access and what they can do to or with those resources. Authorization is defined through the use of policies. A policy is an object in AWS that, when associated with an identity or resource, defines their permissions.
+
+**IAM users** have the following characteristics: 
+
+• Are an entity that you create in AWS
+
+• Provide a way to interact with AWS
+
+• Have no default security credentials
+
+• Can represent persons or applications
+
+**IAM groups** have the following characteristics: 
+
+• Groups are collections of IAM users.
+
+• No default groups exist. 
+
+• Groups cannot be nested. 
+
+• Users can belong to multiple groups.
+
+**IAM roles** have the following characteristics: 
+
+• Are used to delegate access to AWS resources
+
+• Provide temporary access
+
+• Have permissions that are: 
+
+– Defined by using IAM policies
+
+– Attached to the role, not to an IAM user or group
+
+<img width="524" alt="image" src="https://user-images.githubusercontent.com/124072294/228338508-df73195f-9811-4e25-8915-0345b26f9874.png">
+
+A role is a tool for giving temporary access to AWS resources in your AWS account. Permissions are not attached to an IAM user or group. Instead, at runtime, applications or AWS services can programmatically assume a role. When a role is assumed, AWS returns temporary security credentials that the user or application can use to make programmatic requests to AWS. Consequently, you do not need to share long-term security credentials

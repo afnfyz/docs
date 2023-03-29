@@ -4,30 +4,34 @@
 ### **You will need to first find:**
 
 **- The policy arn**
+
 **- The version id of the policy**
 
 You can get your policy arn if you don't know it by listing the users.
 
-Once you have the user arn you will need to use it to get the policy arn.
+Once you have the policy arn you can use it to get the version id.
 
-To do this you can run the command
+
+**1)** To get your **policy arn** do this you can run the command
 
     aws iam list-attached-user-policies --user-name <user_name>
+
 
 This will list all the policies attached to the username you input.
 This list will include the policy names that are attached aswell as the policy arn.
 
+
 <img width="956" alt="image" src="https://user-images.githubusercontent.com/124072294/228667427-be49f55e-14b2-4168-9411-17ec720bc360.png">
 
-Now that you have the policy arn you need to get the version id of the policy.
+**2)** Now that you have the policy arn you need to get the version id of the policy. 
 
-To do this you can run
+To get your **version id** you can input
 
     aws iam get-policy --policy-arn <policy_arn>
 
 <img width="1118" alt="image" src="https://user-images.githubusercontent.com/124072294/228669068-00d7434f-494e-4432-94ac-957d7762d8e1.png">
 
-Now that you have the version id aswell as the policy arn you can get the policy document by inputing this command.
+**3)** Now that you have the **version id** aswell as the **policy arn** you can get the policy document by inputing this command.
 
     aws iam get-policy-version --policy-arn <policy_arn> --version-id <version_id>
 

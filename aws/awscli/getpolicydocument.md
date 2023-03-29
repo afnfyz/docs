@@ -31,14 +31,14 @@ To get your **version id** you can input
 
 <img width="1118" alt="image" src="https://user-images.githubusercontent.com/124072294/228669068-00d7434f-494e-4432-94ac-957d7762d8e1.png">
 
-**3)** Now that you have the **version id** aswell as the **policy arn** you can get the policy document by inputing this command.
+**3)** Now that you have the **version id** aswell as the **policy arn** you can get the **policy document** by inputing this command.
 
     aws iam get-policy-version --policy-arn <policy_arn> --version-id <version_id>
 
 <img width="1343" alt="image" src="https://user-images.githubusercontent.com/124072294/228669584-52a5788f-64c6-485d-a6f5-035898a69210.png">
 
 
-This will output the policy document for the policy you specefied. 
+This will output the **policy document** for the policy you specefied. 
 
 You can output this to a .json file by addding
     

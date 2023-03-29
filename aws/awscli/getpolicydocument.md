@@ -1,4 +1,4 @@
-# <p align="center"> How to get iam policy documents from CLI </p>
+# <p align="center"> How to get AWS IAM policy documents from CLI </p>
 
 
 ### **You will need to first find:**

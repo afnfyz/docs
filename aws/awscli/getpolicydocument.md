@@ -12,7 +12,7 @@ You can get your policy arn if you don't know it by listing the users.
 Once you have the policy arn you can use it to get the version id.
 
 
-**1)** To get your **policy arn** do this you can run the command
+**1)** To get your **policy arn** you can run this command:
 
     aws iam list-attached-user-policies --user-name <user_name>
 
@@ -25,7 +25,7 @@ This list will include the policy names that are attached aswell as the policy a
 
 **2)** Now that you have the policy arn you need to get the version id of the policy. 
 
-To get your **version id** you can input
+To get your **version id** you can run this command:
 
     aws iam get-policy --policy-arn <policy_arn>
 

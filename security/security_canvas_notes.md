@@ -353,3 +353,17 @@ The event contains details about the following:
 
 ![image](https://user-images.githubusercontent.com/124072294/228906575-562889da-f24d-4469-a3d8-8712cbcbfa4a.png)
 
+<img width="714" src="https://user-images.githubusercontent.com/124072294/228908588-37ea1b3c-7bcf-4a29-9793-57ff92649924.png">
+
+This example shows that an AWS Identity and Access Management (IAM) user named Alice used the AWS Command Line Interface (AWS CLI). Alice used the AWS CLI to call the Amazon EC2 StartInstances action to start the instance with an instanceID of i-ebeaf9e2.
+
+**AWS Config**
+
+AWS Config is a service that enables you to assess, audit, and evaluate the configurations of your AWS resources. With AWS Config, you can review changes in configurations and relationships between AWS resources, dive into detailed resource configuration histories, and determine your overall compliance against the configurations specified in your internal guidelines.
+
+With data from AWS Config, you can continuously monitor the configurations of your resources and evaluate these configurations for potential security weaknesses. Changes to your resource configurations can activate Amazon SNS notifications, which can be sent to your security team to review and take action. After a potential security event, you can use AWS Config to review the configuration history of your resources and examine your security posture.
+
+- AWS Config integrates with AWS CloudTrail, which provides a record of all API calls made to your AWS account. This integration enables you to see which user or service made the configuration change.
+
+- AWS Config can help you enforce compliance policies across multiple AWS accounts and regions.
+

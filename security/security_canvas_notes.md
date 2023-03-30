@@ -3,7 +3,13 @@
 
 Security is the practice of protecting information and resources from unauthorized access, use, disclosure, disruption, modification, or destruction. 
 
-It involves the implementation of measures to ensure confidentiality, integrity, and availability of information.
+It involves the implementation of measures to ensure 
+
+confidentiality, 
+
+integrity, 
+
+and availability of information.
 
 There are different types of security, including physical security, network security, and information security. 
 
@@ -16,7 +22,7 @@ There are different types of security, including physical security, network secu
 
 ### Key Concepts:
 
-<img width="1097" alt="image" src="https://user-images.githubusercontent.com/124072294/227321640-67727d90-1645-4e47-b7c9-8137edbf1f9a.png">
+<img width="1097" src="https://user-images.githubusercontent.com/124072294/227321640-67727d90-1645-4e47-b7c9-8137edbf1f9a.png">
 
 **Confidentiality:** This means ensuring that information is kept secret and only accessible by authorized individuals.
 
@@ -56,7 +62,7 @@ Response
 
 Analysis
 
-<img width="1173" alt="image" src="https://user-images.githubusercontent.com/124072294/227323187-c60fd72f-af3b-4a27-a4fd-df0f3d826647.png">
+<img width="1173" src="https://user-images.githubusercontent.com/124072294/227323187-c60fd72f-af3b-4a27-a4fd-df0f3d826647.png">
 
 Prevention includes:
 Network Hardening
@@ -96,12 +102,12 @@ By restricting the use of or disabling network discovery protocols, you can prev
 Amazon Inspector scans Amazon Elastic Compute Cloud (Amazon EC2) instances for open network paths and other network reachability issues and provides guidance about restricting access that is not secure
 
 
-<img width="1187" alt="Screenshot 2023-03-25 at 4 58 55 PM" src="https://user-images.githubusercontent.com/124072294/227741529-0c156923-ab31-4c0e-8661-c39fa1f64c6a.png">
+<img width="1187" src="https://user-images.githubusercontent.com/124072294/227741529-0c156923-ab31-4c0e-8661-c39fa1f64c6a.png">
 
 **AWS Network Firewall** is a service that facilitates the deployment of essential network protections to virtual private clouds (VPCs) on AWS. Its IPS provides active traffic flow inspection with real-time network and application layer protections against vulnerability exploits and brute force attacks. Network Firewall uses a signature-based detection engine that matches network traffic patterns to known threat signatures. Its criteria for matching include packet anomalies and packet attributes such as byte sequences.
 
 
-<img width="1186" alt="image" src="https://user-images.githubusercontent.com/124072294/227741709-34b0c6c5-fb9b-4d0e-bb0b-e1a222ffd923.png">
+<img width="1186"  src="https://user-images.githubusercontent.com/124072294/227741709-34b0c6c5-fb9b-4d0e-bb0b-e1a222ffd923.png">
 
 
 
@@ -148,14 +154,14 @@ A comprehensive solution for systems hardening should also consider these three 
  
  • Regularly apply patches and updates. 
 
- <img width="1173" alt="image" src="https://user-images.githubusercontent.com/124072294/227803907-a9dab2bd-362f-4296-ac5d-61622acf9e0a.png">
+ <img width="1173" src="https://user-images.githubusercontent.com/124072294/227803907-a9dab2bd-362f-4296-ac5d-61622acf9e0a.png">
 
 
 ### System Hardening in the cloud
 
 
 **Automated response (investigatory workflow) in AWS**
- <img width="1059" alt="image" src="https://user-images.githubusercontent.com/124072294/227804670-44157f57-cabe-4931-b148-d50aafb587f0.png">
+ <img width="1059" src="https://user-images.githubusercontent.com/124072294/227804670-44157f57-cabe-4931-b148-d50aafb587f0.png">
 
 
  ### Data Security
@@ -163,7 +169,7 @@ A comprehensive solution for systems hardening should also consider these three 
  **Encryption**
 
 
- <img width="922" alt="image" src="https://user-images.githubusercontent.com/124072294/228038932-13fc40a9-9d4b-4302-ad55-ca66a4c05a59.png">
+ <img width="922" src="https://user-images.githubusercontent.com/124072294/228038932-13fc40a9-9d4b-4302-ad55-ca66a4c05a59.png">
 
  **Symmetric encryption** uses the same key to encrypt and decrypt the data. The key is a shared secret between the sender and the receiver. Symmetric encryption is fast and reliable and is used for bulk data.
 
@@ -171,7 +177,7 @@ A comprehensive solution for systems hardening should also consider these three 
 **Asymmetric encryption** uses both a private key and a public key (a key pair) to encrypt and decrypt the data. Every user in the conversation has a key pair. Asymmetric encryption is more complex and much slower than symmetric encryption. However, it provides more capabilities in the way that keys are managed.
 Asymmetric encryption is used to encrypt emails or create digital signatures.
 
-<img width="1043" alt="image" src="https://user-images.githubusercontent.com/124072294/228040211-c9ba7408-3054-4b26-9a79-c0e7a8077678.png">
+<img width="1043" src="https://user-images.githubusercontent.com/124072294/228040211-c9ba7408-3054-4b26-9a79-c0e7a8077678.png">
 
 In the diagram, you can see that the message “Hello” is encrypted with a public key. After it’s encrypted, the only way to read the message is to use the private key associated to this public key to decrypt the message.
 
@@ -182,7 +188,7 @@ In the diagram, you can see that the message “Hello” is encrypted with a pub
 
 ### Prevention: Identity Management
 
-<img width="1409" alt="image" src="https://user-images.githubusercontent.com/124072294/228299075-aaf89bb0-7417-4942-a4c4-602daaa30ce5.png">
+<img width="1409" src="https://user-images.githubusercontent.com/124072294/228299075-aaf89bb0-7417-4942-a4c4-602daaa30ce5.png">
 
 As an example, consider the case of a visitor who tries to gain physical access to a company’s facilities:
 
@@ -209,21 +215,21 @@ The visitor provides the following information in the log:
 • Name of their contact.
 
 **The three types of authentication factors are:**
-<img width="1031" alt="image" src="https://user-images.githubusercontent.com/124072294/228305903-2d6cc9d4-d55f-4fa5-8419-0af979b52292.png">
+<img width="1031" src="https://user-images.githubusercontent.com/124072294/228305903-2d6cc9d4-d55f-4fa5-8419-0af979b52292.png">
 
 Using something that you have is a more secure way to authenticate. This method is often implemented as a second-factor authentication system after you have provided something that you know
 
-<img width="406" alt="image" src="https://user-images.githubusercontent.com/124072294/228306322-590e4daa-edc6-450f-b465-b943a0796fd8.png">
+<img width="406" src="https://user-images.githubusercontent.com/124072294/228306322-590e4daa-edc6-450f-b465-b943a0796fd8.png">
 
 Using an authentication mechanism that validates a unique human property, such as a fingerprint or a retinal pattern, is the most complex and expensive solution. However, the authentication can be highly reliable when it is configured well.
 
-<img width="485" alt="Screenshot 2023-03-28 at 12 31 27 PM" src="https://user-images.githubusercontent.com/124072294/228307634-d36124fc-2798-4af6-b3d5-985d7d8efe43.png">
+<img width="485" src="https://user-images.githubusercontent.com/124072294/228307634-d36124fc-2798-4af6-b3d5-985d7d8efe43.png">
 
 **Dictionary Attacks**
 
 A list of predefined words as passwords is used to attempt to log in to a system.
 
-[Password Storage: Hashing, Salting etc.](https://www.youtube.com/watch?v=qgpsIBLvrGY)
+[Password Storage: Hashing, Sing etc.](https://www.youtube.com/watch?v=qgpsIBLvrGY)
 
 **Single Sign-On SSO**
 
@@ -270,7 +276,7 @@ IAM is used to configure authorization based on the user. Authorization determin
 
 – Attached to the role, not to an IAM user or group
 
-<img width="524" alt="image" src="https://user-images.githubusercontent.com/124072294/228338508-df73195f-9811-4e25-8915-0345b26f9874.png">
+<img width="524" src="https://user-images.githubusercontent.com/124072294/228338508-df73195f-9811-4e25-8915-0345b26f9874.png">
 
 A role is a tool for giving temporary access to AWS resources in your AWS account. Permissions are not attached to an IAM user or group. Instead, at runtime, applications or AWS services can programmatically assume a role. When a role is assumed, AWS returns temporary security credentials that the user or application can use to make programmatic requests to AWS. Consequently, you do not need to share long-term security credentials
 
@@ -278,7 +284,72 @@ A role is a tool for giving temporary access to AWS resources in your AWS accoun
 
 A request results in an explicit deny if an applicable policy includes a Deny statement. If policies that apply to a request include an Allow statement and a Deny statement, the Deny statement trumps the Allow statement. The request is explicitly denied.
 
-<img width="516" alt="image" src="https://user-images.githubusercontent.com/124072294/228367311-d2496ee7-e24d-47dc-bf54-365897f0433d.png">
+<img width="516" src="https://user-images.githubusercontent.com/124072294/228367311-d2496ee7-e24d-47dc-bf54-365897f0433d.png">
 
 You can assign the same policy to a user, group, and role. 
 This practice makes reuse available and reduces the need to recreate the same policy for different identities.
+
+## Detection
+
+What we do when prevention fails.
+
+**Intrution Detection System**
+
+An intrusion detection system (IDS) is a hardware or software solution that monitors a network or a computer system to detect intrusions or malicious activity. When this kind of activity happens, the IDS generates alerts to notify security personnel.
+
+An IDS can detect an attack by using different mechanisms, including the following:
+
+• Anomaly-based detection – The IDS compares the current traffic pattern or system activity against established baselines for any deviation.
+
+• Signature-based detection – The IDS monitors and analyzes the traffic for known patterns of attack.
+
+There are two types of IDS, Network IDS and Host IDS:
+<img width="1093" src="https://user-images.githubusercontent.com/124072294/228881563-38f70785-9177-46e6-a7bb-b7237293bbe6.png">
+
+In the AWS cloud, Amazon offers a service called AWS GuardDuty.
+
+GuardDuty is a threat detection service that continuously monitors your AWS accounts and workloads for malicious activity. 
+
+It delivers detailed security findings for visibility and remediation.
+
+When you activate GuardDuty and configure it to monitor your account, GuardDuty automatically detects threats by using anomaly detection and machine learning techniques. 
+You can view the security findings that GuardDuty produces in the GuardDuty console or through Amazon CloudWatch Events.
+
+GuardDuty detects unauthorized and unexpected activity in your AWS environment by analyzing and processing data from different AWS service logs. These logs include the following:
+
+• AWS CloudTrail event logs 
+
+• Virtual private cloud (VPC) flow logs 
+
+• Domain Name System (DNS) logs
+
+
+**AWS CloudTrail**
+
+By definition, CloudTrail is an auditing, compliance monitoring, and governance tool from AWS. It is classified as a Management and Governance tool in the AWS Management Console.
+
+
+CloudTrail logs, continuously monitors, and retains account activity related to actions across your AWS infrastructure, which gives you control over storage, analysis, and remediation actions.
+
+How does CloudTrail work?
+1. An activity happens in your account. 
+2. CloudTrail captures and records that activity, which is referred to as a CloudTrail event. 
+
+The event contains details about the following: 
+
+• Who performed the request 
+
+• When the event occurred (that is, the date and time of the request) 
+
+• What the source Internet Protocol (IP) address was 
+
+• How the request was made 
+
+• Which actions were performed 
+
+• Where the action occurred (that is, in which Region) 
+
+• What the response was.
+
+![image](https://user-images.githubusercontent.com/124072294/228906575-562889da-f24d-4469-a3d8-8712cbcbfa4a.png)
+

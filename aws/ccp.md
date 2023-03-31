@@ -618,3 +618,12 @@ Look into Cloud adoption framework
 4- Performance Efficiency: The performance efficiency pillar includes the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.
 
 5- Cost Optimization: The cost optimization pillar includes the ability to avoid or eliminate unneeded cost or sub-optimal resources.
+
+
+### Amazon Macie
+
+Amazon Macie is a fully managed security service that uses machine learning and pattern matching techniques to automatically discover, classify, and protect sensitive data in AWS. It can identify sensitive data such as personally identifiable information (PII), intellectual property, and financial data, and provide alerts and recommendations on how to secure the data. Macie provides a dashboard that allows you to see an inventory of your sensitive data and view alerts, including those related to non-compliant data access attempts. It also provides a continuous monitoring feature that can detect new sensitive data as it is created, and integrates with other AWS services such as Amazon S3 and AWS CloudTrail.
+
+### AWS Storage Gateway 
+ 
+A hybrid cloud storage service that provides on-premises applications with access to virtually unlimited cloud storage. It enables hybrid storage between on-premises storage environments and AWS storage services, including Amazon S3, Amazon S3 Glacier, Amazon EBS, and Amazon DynamoDB. AWS Storage Gateway is deployed as a virtual machine or a hardware appliance in the customer's data center, and it can store data in the cloud for scalable and cost-effective storage. It also provides features such as data transfer, backup and restore, disaster recovery, and caching to improve performance and reduce the latency of accessing cloud storage.

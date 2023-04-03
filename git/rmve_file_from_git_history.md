@@ -1,7 +1,10 @@
 # How to erase files in commit history that contain sensitive information
 
-	git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch path/to/file.txt' --prune-empty 
---tag-name-filter cat -- --all
+	git filter-branch --force \
+	--index-filter 'git rm --cached --ignore-unmatch path/to/file.txt' \
+	--prune-empty \
+	--tag-name-filter cat -- \
+	--all
 
 **git filter-branch is a Git command that lets you modify the commit history of a repository.**
 
@@ -16,7 +19,7 @@ is a flag that specifies the filter to apply to the index of the repository. In 
 
 
 
-	git rm --cached --ignore-unmatch functional/creds.txt 
+	'git rm --cached --ignore-unmatch path/to/file'
 removes the specified file from the Git index, but keeps it in the file system.
 
 
@@ -41,4 +44,4 @@ commit history. It then cleans up any empty commits and updates any tags that mi
 
 **After this run:** 
 	git push --force origin main
-to the changes that were made.
+to push the changes that were made.

@@ -43,5 +43,7 @@ commit history. It then cleans up any empty commits and updates any tags that mi
 
 
 **After this run:** 
+
 	git push --force origin main
+	
 to push the changes that were made.

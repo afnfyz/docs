@@ -209,6 +209,9 @@ following tasks:
 
 Infrastructure as Code (IaC)
 
+<img width="1391" alt="image" src="https://user-images.githubusercontent.com/124072294/230260893-b7eccb13-647f-4b9b-a2ed-2cec990e5bb8.png">
+
+
 Allows you to define what you want in a cloud formation template in 
 formats like JSON or YAML and AWS CloudFormation parses the document and 
 begins to provision all the resources that were defined.

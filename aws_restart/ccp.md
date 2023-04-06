@@ -211,6 +211,8 @@ Infrastructure as Code (IaC)
 
 <img width="1391" alt="image" src="https://user-images.githubusercontent.com/124072294/230260893-b7eccb13-647f-4b9b-a2ed-2cec990e5bb8.png">
 
+**AWS SDK is used to interact with AWS services programmatically, while IAC tools such as AWS CloudFormation and AWS CDK are used to define and deploy infrastructure resources on AWS in a repeatable and automated fashion.
+
 
 Allows you to define what you want in a cloud formation template in 
 formats like JSON or YAML and AWS CloudFormation parses the document and 

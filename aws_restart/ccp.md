@@ -632,3 +632,8 @@ Amazon Macie is a fully managed security service that uses machine learning and 
 ### AWS Storage Gateway 
  
 A hybrid cloud storage service that provides on-premises applications with access to virtually unlimited cloud storage. It enables hybrid storage between on-premises storage environments and AWS storage services, including Amazon S3, Amazon S3 Glacier, Amazon EBS, and Amazon DynamoDB. AWS Storage Gateway is deployed as a virtual machine or a hardware appliance in the customer's data center, and it can store data in the cloud for scalable and cost-effective storage. It also provides features such as data transfer, backup and restore, disaster recovery, and caching to improve performance and reduce the latency of accessing cloud storage.
+
+
+### Support Plans
+
+![image](https://user-images.githubusercontent.com/124072294/231270790-8707fec9-aa97-4d69-9b35-c9401787e35e.png)

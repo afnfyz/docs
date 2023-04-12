@@ -22,6 +22,12 @@ With EC2 instances you can either scale UP or scale OUT.
 Scaling up is adding more power to the instances.
 While scaling out is to increase the amount of instances.
 
+![Screenshot2023_04_12_153308](https://user-images.githubusercontent.com/124072294/231566198-847dad8c-4093-408a-9ea4-54319d75179b.jpg)
+
+
+![image](https://user-images.githubusercontent.com/124072294/231566132-9568b42c-97b2-489d-8c46-a261eb200150.png)
+
+
 ### EC2 Auto Scaling:
 
 ** Scales horizontally.
@@ -639,3 +645,4 @@ A hybrid cloud storage service that provides on-premises applications with acces
 ![image](https://user-images.githubusercontent.com/124072294/231270790-8707fec9-aa97-4d69-9b35-c9401787e35e.png)
 
 <img width="406" alt="image" src="https://user-images.githubusercontent.com/124072294/231496800-d20ecc0e-6dcb-4794-8ca0-c9a45a9ee8c5.png">
+

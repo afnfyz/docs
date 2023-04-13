@@ -289,7 +289,7 @@ meaning that only the data that has changed since the last snapshot is
 saved. This can help save storage space and reduce costs.
 
 **Amazon Elastic File System EFS**
-
+- Each time you read or write you have to pay while using EFS.
 - EFS can be used to create and manage file systems that can be accessed 
 by multiple instances simultaneously.
 -  EFS supports the NFS protocol and can be accessed by instances in 
@@ -646,3 +646,15 @@ A hybrid cloud storage service that provides on-premises applications with acces
 
 <img width="406" alt="image" src="https://user-images.githubusercontent.com/124072294/231496800-d20ecc0e-6dcb-4794-8ca0-c9a45a9ee8c5.png">
 
+### Similar Yet Different
+
+**CloudWatch Logs and CloudTrail** are both AWS services that are used for monitoring and logging. However, they differ in their primary use cases and functionalities.
+
+CloudWatch Logs is a logging service that allows you to monitor, store, and access log files from AWS resources like EC2 instances, Lambda functions, and VPC Flow Logs.
+
+On the other hand, CloudTrail is an AWS service that provides a record of events and API calls made within your AWS account. It captures information about who made the call, what service was called, what parameters were used, and when the call was made.
+
+In summary, CloudWatch Logs is primarily used for monitoring and analyzing logs from AWS resources, while CloudTrail is used for auditing and tracking changes made to your AWS account.
+
+**CloudWatch and CloudWatch Logs**
+CloudWatch is a monitoring service that provides metrics and log data about AWS resources, applications, and services. CloudWatch Logs is a service that helps you monitor, store, and access log files from multiple sources in a central location.

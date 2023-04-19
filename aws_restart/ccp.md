@@ -300,6 +300,10 @@ last snapshot, and not just the changes. Snapshots are incremental,
 meaning that only the data that has changed since the last snapshot is 
 saved. This can help save storage space and reduce costs.
 
+EBS IOPS refers to Input/Output Operations Per Second for Amazon Elastic Block Store (EBS), a block-level storage system designed to provide highly available and reliable storage for Amazon EC2 instances.
+
+IOPS is a measure of the number of read/write operations that can be performed on an EBS volume per second. Amazon EBS volumes are designed to deliver a specified number of IOPS based on the volume type and size, with options for both provisioned IOPS and general purpose SSD volumes.
+
 **Amazon Elastic File System EFS**
 - Each time you read or write you have to pay while using EFS.
 - EFS can be used to create and manage file systems that can be accessed 

@@ -265,6 +265,18 @@ end-users. When you create a CloudFront distribution, you specify the
 origin for the content that you want to deliver, which can be an S3 
 bucket, an EC2 instance, or a load balancer, among other options.
 
+
+**CloudFront vs Global Accelerator**
+
+CloudFront is a content delivery network (CDN) that caches and delivers content from edge locations to end-users. It is primarily used for delivering static and dynamic content such as images, videos, and HTML files. CloudFront caches the content at edge locations located closer to the users, thereby reducing the latency and improving the performance.
+
+Global Accelerator is a service that routes traffic through the AWS global network to improve the availability and performance of applications. It works by creating static IP addresses that act as a fixed entry point to your application endpoints in one or more AWS regions. It routes traffic through the AWS global network and optimizes the path to your application endpoints based on the network conditions.
+
+The main difference between CloudFront and Global Accelerator is their use case. CloudFront is used primarily for content delivery and is optimized for delivering static and dynamic content to end-users. Global Accelerator, on the other hand, is used for improving the availability and performance of applications by routing traffic through the AWS global network.
+
+Another key difference is that CloudFront uses caching to deliver content from edge locations, while Global Accelerator routes traffic through the AWS global network to reach the optimal endpoint.
+
+
 ### Database and Storage.
 **Amazon Elastic Block Storage EBS**
 <img width="1012" alt="image" 
@@ -675,3 +687,5 @@ CloudWatch is a monitoring service that provides metrics and log data about AWS 
 ## AWS Comprehend
 
 <img width="1183" alt="image" src="https://user-images.githubusercontent.com/124072294/233176417-df80886d-c61b-43ac-b490-144992f03b74.png">
+
+

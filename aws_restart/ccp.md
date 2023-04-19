@@ -671,3 +671,7 @@ In summary, CloudWatch Logs is primarily used for monitoring and analyzing logs 
 
 **CloudWatch and CloudWatch Logs**
 CloudWatch is a monitoring service that provides metrics and log data about AWS resources, applications, and services. CloudWatch Logs is a service that helps you monitor, store, and access log files from multiple sources in a central location.
+
+## AWS Comprehend
+
+<img width="1183" alt="image" src="https://user-images.githubusercontent.com/124072294/233176417-df80886d-c61b-43ac-b490-144992f03b74.png">

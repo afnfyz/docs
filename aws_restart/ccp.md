@@ -692,4 +692,9 @@ CloudWatch is a monitoring service that provides metrics and log data about AWS 
 
 <img width="1183" alt="image" src="https://user-images.githubusercontent.com/124072294/233176417-df80886d-c61b-43ac-b490-144992f03b74.png">
 
+## AWS Elastic Load Balancer
+
+<img width="1129" alt="image" src="https://user-images.githubusercontent.com/124072294/233877708-55e21094-46d4-4ed7-b71d-f4e05c5038d2.png">
+
+** The Gateway Load Balancer sends traffic to be inspected before sending it to the application. 
 

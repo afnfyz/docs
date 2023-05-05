@@ -1,0 +1,34 @@
+
+## Interpreted Languages vs Compiled Languages
+
+**Advantages of interpreted languages:**
+
+Interpreted languages are programming languages where the source code is not compiled into machine code before it is executed. Instead, the code is interpreted line-by-line at runtime. 
+
+- Faster development: Interpreted languages allow for faster development because code changes can be executed immediately without the need for compilation. This makes them a good choice for rapid prototyping.
+
+- Easier to learn: Interpreted languages are generally easier to learn because they have a simpler syntax and require fewer steps to run a program.
+
+- Dynamic typing: Interpreted languages use dynamic typing, which means that variables do not have to be declared with a specific type. This makes the code more flexible and easier to write.
+
+**Disadvantages of interpreted languages:**
+
+- Slower performance: Interpreted languages are generally slower than compiled languages because the code has to be interpreted at runtime. This can result in slower execution times, which can be a problem for applications that require high performance.
+
+- Limited optimization: Because the code is not compiled, there are fewer optimization opportunities. This can lead to less efficient code and lower performance.
+
+- Debugging can be more difficult: Interpreted languages can be more difficult to debug because errors are often not caught until runtime. This can make it harder to find and fix errors in the code.
+
+Overall, interpreted languages are often a good choice for rapid prototyping, web development, and small to medium-sized projects. However, for large and complex applications that require high performance, compiled languages may be a better choice.
+
+List of Interpreted Languages include:
+
+Python
+JavaScript
+Ruby
+PHP
+Perl
+R
+Swift
+Lua
+Bash
